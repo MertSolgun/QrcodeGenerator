@@ -17,8 +17,8 @@ input::placeholder {
 }
 
 input {
+  color: rgb(208, 246, 133);
   outline: none;
-  color: white;
 }
 
 .card {
