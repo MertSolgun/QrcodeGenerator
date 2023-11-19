@@ -1,0 +1,124 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #373b44;
+  background: -webkit-linear-gradient(to right, #4286f4, #373b44);
+  background: linear-gradient(to right, #4286f4, #373b44);
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+input::placeholder {
+  color: rgb(208, 246, 133);
+}
+
+input {
+  outline: none;
+  color: white;
+}
+
+.card {
+  background-color: rgba(8, 1, 1, 0.358);
+  padding: 25px;
+  width: 30%;
+  position: absolute;
+  left: 50%;
+  border-radius: 10px;
+  top: 30%;
+  transform: translate(-50%, -50%);
+}
+.cardMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#qrinput {
+  width: 80%;
+  padding: 10px;
+  margin: 10px auto;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 3px;
+  font-family: "JetBrains Mono", monospace;
+}
+
+.scanme {
+  color: rgb(208, 246, 133);
+  background-color: rgba(8, 1, 1, 0.158);
+  padding: 10px 15px;
+  margin-bottom: 10px auto;
+  font-size: 1.3rem;
+  border-radius: 10px;
+  width: 100%;
+  font-family: "JetBrains Mono", monospace;
+  font-weight: bold;
+  text-align: center;
+  justify-content: center;
+}
+#generateqr {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  align-items: center;
+}
+
+#generateqr img {
+  border: none !important;
+  padding-top: 10px;
+}
+
+.line-1 {
+  position: relative;
+  left: 0;
+  color: rgb(208, 246, 133);
+  right: 0;
+  top: 50%;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  font-size: 2rem;
+  text-align: center;
+  white-space: nowrap;
+  font-family: "JetBrains Mono", monospace;
+  overflow: hidden;
+}
+
+.anim-typewriter {
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+    blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 10em;
+  }
+}
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+@media (max-width: 800px) {
+  .card {
+    width: 80%;
+    top: 25%;
+  }
+  .line-1 {
+    font-size: 1.4rem;
+  }
+}
+
+input::placeholder {
+  color: white;
+}

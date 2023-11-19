@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR CODE GENERATOR APP</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;1,300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" type="image/x-icon" href="./indir.png" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <p class="line-1 anim-typewriter">Type Something</p>
+        <div class="cardMain">
+          <input
+            type="search"
+            id="qrinput"
+            class=""
+            placeholder="https://www.youtube.com/watch?v=cw-iy6LqQmg"
+          />
+        </div>
+        <div id="generateqr">
+          <h1 class="scanme" style="display: none">Scan Me📱</h1>
+          <a href="" class="download" download="">
+            <img src="" alt="" id="generateImg" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>
