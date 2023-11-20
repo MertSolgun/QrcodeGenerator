@@ -118,3 +118,10 @@ input {
     font-size: 1.4rem;
   }
 }
+
+@media (max-width: 600px) {
+  .card {
+    width: 80%;
+    top: 50%;
+  }
+}
